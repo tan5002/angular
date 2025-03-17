@@ -1,0 +1,18 @@
+body {
+    background-color: #dfe7fd;
+}
+.card {
+    border-radius: 20px;
+    padding: 20px;
+}
+.color-option {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.btn-buy {
+    width: 100%;
+}
