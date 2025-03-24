@@ -16,3 +16,15 @@ body {
 .btn-buy {
     width: 100%;
 }
+.textRed {
+    color: red;
+}
+.textBold{
+    font-weight: bold;
+}
+.textUnderline {
+    text-decoration: underline;
+}
+.textItalic{
+    font-style: italic;
+}

@@ -4,17 +4,17 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloAngularComponent } from './hello-angular/hello-angular.component';
-import { DemoAngularComponent } from './demo-angular/demo-angular.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloAngularComponent,
-    DemoAngularComponent
+    HelloAngularComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration(withEventReplay())

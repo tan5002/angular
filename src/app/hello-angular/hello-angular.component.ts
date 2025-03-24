@@ -17,6 +17,14 @@ export class HelloAngularComponent {
     "40*40", 
     "35*49"
   ]
-
-
+  isValid = false;
+  textClasses = {
+    textRed : !this.isValid
+  }
+  canSave = true;
+  isUnchanged = false;
+  isSpecial = true;
+  textStyle = {
+    "font-style": !this.canSave ? "italic": "normal"
+  }
 }
