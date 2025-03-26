@@ -6,12 +6,20 @@ import { AppComponent } from './app.component';
 import { HelloAngularComponent } from './hello-angular/hello-angular.component';
 import { FormsModule } from '@angular/forms';
 import { ProductComponent } from './product/product.component';
+import { AboutComponent } from './about/about.component';
+import { ItemComponent } from './item/item.component';
+import { ItemsComponent } from './items/items.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloAngularComponent,
-    ProductComponent
+    ProductComponent,
+    AboutComponent,
+    ItemComponent,
+    ItemsComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
