@@ -5,9 +5,13 @@ import { AboutComponent } from './about/about.component';
 import { ItemsComponent} from './items/items.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProfileFormComponent } from './profile-form/profile-form.component';
+import { RegisterFormComponent } from './register-form/register-form.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/items',pathMatch: 'full'},
+  {path: '', redirectTo: '/profile',pathMatch: 'full'},
+  {path:"profile",component: ProfileFormComponent},
+  {path:"register",component: RegisterFormComponent},
   {path:"hello",component: HelloAngularComponent},
   {path:"about",component: AboutComponent},
   {path:"items",component: ItemsComponent},

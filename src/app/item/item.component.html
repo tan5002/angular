@@ -1,10 +1,8 @@
-<div class="card" style="width: 18rem">
+<div class="card" style="width: 18rem;">
+    <img src={{item().image}} class="card-img-top " alt="..." style="width: 200px;height:200px">
     <div class="card-body">
-        <h5 class="card-title">{{ item().name }}</h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary">{{ item().id }}</h6>
-        <p class="card-text">
-            {{ item().description }}
-        </p>
-        <a href="#" class="card-link" routerLink="/items/{{ item().id }}">Detail</a>
+      <h5 class="card-title">{{ item().name }}</h5>
+      <p class="card-text"> {{ item().description }}</p>
+      <a href="#" class="card-link" routerLink="/items/{{ item().id }}">Detail</a>
     </div>
-</div>
+  </div>

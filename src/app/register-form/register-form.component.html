@@ -1,0 +1,31 @@
+<div class="container mt-4">
+    <form>
+      <div class="mb-3">
+        <label for="userEmail" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="userEmail"
+          aria-describedby="emailHelp"
+          [formControl]="email"
+        />
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="userPwd" class="form-label">Password</label>
+        <input type="password" class="form-control" id="userPwd" [formControl]="password"/>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" [formControl]="rememberMe" />
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button  class="btn btn-primary" (click)="resetFormInput()">Reset</button>
+    </form>
+  </div>
+
+<span class="badge text-ng-primary">{{email.value}}</span>
+<span class="badge text-ng-primary">{{password.value}}</span>
+<span class="badge text-ng-primary">{{rememberMe.value}}</span>

@@ -8,4 +8,5 @@ import { Component, input } from '@angular/core';
 })
 export class ItemDetailComponent {
   id = input.required<number>();
+  name = input.required<string>();
 }
