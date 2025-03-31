@@ -6,7 +6,10 @@ import { AppModule } from './app.module';
 import { serverRoutes } from './app.routes.server';
 
 @NgModule({
-  imports: [AppModule, ServerModule],
+  imports: [
+    AppModule, // Kiểm tra lại xem có lỗi trong AppModule không
+    ServerModule
+  ],
   providers: [provideServerRouting(serverRoutes)],
   bootstrap: [AppComponent],
 })

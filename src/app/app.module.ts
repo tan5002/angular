@@ -13,6 +13,7 @@ import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProfileFormComponent } from './profile-form/profile-form.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
+import { ProductFormComponent } from './product-form/product-form.component'; 
 
 @NgModule({
   declarations: [
@@ -25,13 +26,14 @@ import { RegisterFormComponent } from './register-form/register-form.component';
     ItemDetailComponent,
     PageNotFoundComponent,
     ProfileFormComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ProductFormComponent 
   ],
   providers: [
     provideClientHydration(withEventReplay())
